@@ -109,5 +109,5 @@ url_main_summary<- paste(home_dir, "merge/X_summary.txt", sep="")
 merge_dir<- paste(home_dir, "merge", sep="")
 
 dir.create(merge_dir, showWarnings = TRUE, recursive = FALSE, mode = "0777")
-write.table(df_x_subjects_activity_merged_subset_summary, file= url_main_summary)
+write.table(df_x_subjects_activity_merged_subset_summary, file= url_main_summary,row.name=FALSE)
 
